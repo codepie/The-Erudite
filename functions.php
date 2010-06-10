@@ -134,7 +134,7 @@ function old_sandbox_globalnav() {
 	if (get_the_theme_option('erdt_category_nav') === 'true') {
 		$menu = wp_list_categories('title_li=&echo=0');
 	} else {
-		$menu = wp_list_pages('title_li=&sort_column=menu_order&echo=0');
+		$menu = wp_list_pages('title_li=&sort_column=menu_order&echo=0&depth=1');
 	}
 	
 	$menu = str_replace( array( "\r", "\n", "\t" ), '', $menu );
