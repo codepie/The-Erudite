@@ -19,7 +19,7 @@ endif;
 <?php if ( have_comments() ) : // show the comments ?>
 
 	<ul class="commentlist" id="singlecomments">
-	<?php wp_list_comments('avatar_size=32&reply_text='.__('Respond to this', 'erudite').'&callback=comments_custom'.$max_threading); ?>
+	<?php wp_list_comments('avatar_size=50&reply_text='.__('Respond to this', 'erudite').'&callback=comments_custom'.$max_threading); ?>
 	</ul>
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -56,6 +56,7 @@ endif;
 							<p id="comment-notes"><?php _e( 'Your email is <em>never</em> shared.', 'erudite' ) ?> <?php if ($req) _e( 'Required fields are marked <span class="required">*</span>', 'erudite' ) ?></p>
 
 							<div class="user-info">
+<?php do_action('fbc_display_login_button') ?>
 								<div class="form-label"><label for="author"><?php _e( 'Name', 'erudite' ) ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'erudite' ) ?></div>
 								<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" /></div>
 
