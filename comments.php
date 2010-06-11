@@ -19,7 +19,7 @@ endif;
 <?php if ( have_comments() ) : // show the comments ?>
 
 	<ul class="commentlist" id="singlecomments">
-	<?php wp_list_comments('avatar_size=50&reply_text='.__('Respond to this', 'erudite').'&callback=comments_custom'.$max_threading); ?>
+	<?php wp_list_comments('avatar_size=50&reply_text='.__('Respond to this', 'erudite').'&type=comment&callback=comments_custom'.$max_threading); ?>
 	</ul>
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
