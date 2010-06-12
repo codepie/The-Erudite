@@ -428,7 +428,7 @@ load_theme_textdomain('erudite', get_template_directory() . '/translation');
 add_action( 'init', 'sandbox_widgets_init' );
 
 // Registers our function to filter default gallery shortcode
-add_filter( 'post_gallery', 'sandbox_gallery', $attr );
+// add_filter( 'post_gallery', 'sandbox_gallery', $attr );
 
 // Adds filters for the description/meta content in archives.php
 add_filter( 'archive_meta', 'wptexturize' );
