@@ -281,4 +281,5 @@ body.dark {
 .dark .entry-content a:hover {text-decoration:none; border-color:#ddd;}
 .dark .entry-content hr, .dark .hr {background-image:url(../images/fleuron-dark.png);}
 
-
+/* Quickfix */
+.entry-content .gallery a {text-decoration:none; border:none;}
